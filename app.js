@@ -6,14 +6,14 @@ function handler(event) {
 
     if (event.clientX >= 368 ) {
         ++move;
-        if (move > 5) {
+        if (move > 6) {
             move = 1;
         }
     }
     else {
         --move;
         if (move < 1) {
-            move = 5;
+            move = 6;
         }
     }
     document.body.style.background = `url('./pic${move}.jpg') no-repeat center/cover`;
